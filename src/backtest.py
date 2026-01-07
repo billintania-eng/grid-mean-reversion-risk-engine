@@ -29,3 +29,14 @@ class GridMeanReversionEngine:
         if self.total_lots == 0:
             return 0.0
         return (worst_price - self.wap_price) * self.total_lots
+
+if __name__ == "__main__":
+    engine = GridMeanReversionEngine(grid_size=25)
+
+    engine.add_position(price=4450, lots=10)
+    engine.add_position(price=4425, lots=20)
+
+    print("WAP:", engine.wap_price)
+    print("Unrealised PnL @ 4475:", engine.unrealised_pnl(4475))
+    print("Worst-case DD @ 4350:", engine.worst_case_drawdown(4350))
+
