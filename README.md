@@ -19,6 +19,14 @@ when positions are accumulated over time.
 
 ---
 
+## Sample Backtest Output
+
+Worst-case equity curve (intrabar unrealised-aware, V-shape re-arm logic):
+
+![Worst-case Equity Curve](outputs/equity_worst_case.png)
+
+---
+
 ## Core Ideas
 
 - **V-shape mean reversion logic**  
