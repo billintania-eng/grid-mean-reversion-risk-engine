@@ -1,5 +1,3 @@
-<img width="241" height="314" alt="image" src="https://github.com/user-attachments/assets/11e6cca7-4227-4341-b9b5-ada534499512" /># grid-mean-reversion-risk-engine
-
 A grid-based mean reversion backtesting engine designed with a **risk-first approach**,
 focusing on weighted average exposure, worst-case drawdown, and noise-resistant execution logic.
 
