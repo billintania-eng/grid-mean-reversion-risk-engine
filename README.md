@@ -27,6 +27,21 @@ Worst-case equity curve (intrabar unrealised-aware, V-shape re-arm logic):
 
 ---
 
+### Backtest Summary (Illustrative)
+
+- Instrument: XAUUSD
+- Timeframe: H4
+- Test window: ~2 years
+- Strategy: Grid-based mean reversion with V-shape re-arm
+- Total trades: ~770
+- Max drawdown (worst-case, intrabar): ~64%
+- Drawdown methodology: Unrealised exposure vs weighted average price (WAP)
+
+> Results are illustrative and intended to highlight **risk and exposure dynamics**,  
+> not to demonstrate return optimisation.
+
+---
+
 ## Core Ideas
 
 - **V-shape mean reversion logic**  
