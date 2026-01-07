@@ -1,4 +1,4 @@
-# grid-mean-reversion-risk-engine
+<img width="241" height="314" alt="image" src="https://github.com/user-attachments/assets/11e6cca7-4227-4341-b9b5-ada534499512" /># grid-mean-reversion-risk-engine
 
 A grid-based mean reversion backtesting engine designed with a **risk-first approach**,
 focusing on weighted average exposure, worst-case drawdown, and noise-resistant execution logic.
@@ -16,6 +16,15 @@ grid and mean reversion strategies, with particular emphasis on
 Rather than optimising for entry signals or profitability alone,
 the engine focuses on how **unrealised exposure and drawdown evolve**
 when positions are accumulated over time.
+
+---
+
+## Project Structure
+
+- `src/engine.py` — Position book, WAP aggregation, unrealised PnL, and worst-case intrabar drawdown
+- `src/strategy.py` — V-shape + re-arm entry logic and depth-driven sizing
+- `src/backtest.py` — Backtest loop, accounting, exports, and plots
+- `outputs/` — Exported figures and backtest artifacts
 
 ---
 
