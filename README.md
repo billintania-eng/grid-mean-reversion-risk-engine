@@ -87,6 +87,32 @@ Key characteristics:
 
 ---
 
+## Sample Backtest Result (Illustrative)
+
+The following results are provided for **illustrative and diagnostic purposes only**.
+They are intended to highlight **risk behaviour and exposure dynamics**, not to
+demonstrate optimal performance.
+
+**Backtest context**
+- Instrument: XAUUSD  
+- Timeframe: H4  
+- Test length: ~2 years  
+- Strategy: Grid-based mean reversion with V-shape confirmation  
+
+**Key observations**
+- Prolonged price compression led to a gradual increase in open exposure before any
+  mean reversion occurred.
+- Maximum drawdown was driven primarily by **unrealised losses**, not realised trades.
+- Worst-case drawdown materialised **before** price reverted back to the grid mean.
+- Portfolio-level drawdown significantly exceeded close-to-close equity drawdown,
+  highlighting the risk of ignoring intrabar extremes in grid strategies.
+
+These observations reinforce the importance of evaluating grid systems using
+**weighted average exposure and worst-case intrabar pricing**, rather than relying
+solely on realised PnL or bar-close equity curves.
+
+---
+
 ## Outputs
 
 The engine produces:
